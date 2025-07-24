@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-top" id="mainHeader">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Global Tail Logo" width="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-outline-primary rounded" href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Login Section - Initially displayed -->
+<!-- Login Section - Initially displayed -->
+<section id="login" class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 shadow">
+                    <h2 class="text-center mb-4">Login to Global Tail</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mb-2">Login</button>
+                        <button type="button" class="btn btn-secondary btn-block" id="skipLoginBtn">Skip Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content - Initially hidden -->
+<div id="mainContent" class="d-none">
+    <section id="home" class="text-center">
+        <h1>Welcome to Global Tail</h1>
+        <p>Your adventure starts here!</p>
+    </section>
+
+    <section id="locations" class="container text-center my-5">
+        <h2>Explore Our Locations</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?maldives" class="card-img-top" alt="Maldives">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text">Experience the beautiful beaches and crystal-clear waters.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?paris" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">Discover the city of lights and romance.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?bali" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali</h5>
+                        <p class="card-text">Enjoy the vibrant culture and stunning landscapes.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?tokyo" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo</h5>
+                        <p class="card-text">Explore the vibrant metropolis of Tokyo.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?rome" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Rome</h5>
+                        <p class="card-text">Step back in time in the Eternal City.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?sydney" class="card-img-top" alt="Sydney">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney</h5>
+                        <p class="card-text">Discover the iconic landmarks of Sydney.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?newyork" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York</h5>
+                        <p class="card-text">Experience the city that never sleeps.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?capetown" class="card-img-top" alt="Cape Town">
+                    <div class="card-body">
+                        <h5 class="card-title">Cape Town</h5>
+                        <p class="card-text">Enjoy the stunning landscapes of Cape Town.</p>
+                        <a href="#" class="btn btn-primary explore-btn" data-target-section="registration">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <section id="registration" class="container my-5">
+        <h2 class="text-center">Register</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 shadow">
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-center my-5">
+        <h2>Contact Us</h2>
+        <p>Email: info@globaltail.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+        <footer class="mt-4">
+            <p>&copy; 2023 Global Tail. All rights reserved.</p>
+        </footer>
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="project1.js"></script>
+</body>
+</html>
