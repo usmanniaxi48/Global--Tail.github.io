@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 20px; /* Keep this from the original CSS */
+}
+
+footer a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+#registration .card { /* This section is no longer directly used for registration but can remain for general card styling if needed elsewhere */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#registration .card:hover {
+  transform: translateY(-5px);
+}
+
+#registration .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+#registration button {
+  border-radius: 5px;
+}
+
+.navbar .btn-outline-primary {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+header {
+    background-color: white;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    border-radius: 25px;
+}
+
+/* Added for horizontal scrolling of location cards */
+.row.flex-nowrap {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.row.flex-nowrap .col-md-4 {
+    flex: 0 0 auto; /* Prevent columns from shrinking */
+    width: 33.333333%; /* Adjust as needed for desired card width */
+}
+
+/* Custom styles for login page */
+#login {
+    background: linear-gradient(to bottom, #a8edea, #fed6e3);
+}
